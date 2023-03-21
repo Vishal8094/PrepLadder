@@ -3,11 +3,13 @@ package com.example.myapplication;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -19,36 +21,37 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
 
 public class MainActivity extends AppCompatActivity {
-    Button login_button;
+    TextView signin;
     ImageView google_img;
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         google_img=findViewById(R.id.google_img);
-       gso=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-               .requestEmail()
-               .build();
+        gso=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
 
-       gsc= GoogleSignIn.getClient(this,gso);
-       google_img.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               sign_in();
-           }
-       });
-
-
+        gsc= GoogleSignIn.getClient(this,gso);
+        google_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sign_in();
+            }
+        });
 
 
-        login_button= findViewById(R.id.login_button);
-        login_button.setOnClickListener(new View.OnClickListener() {
+
+
+        signin= findViewById(R.id.signin);
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,page2.class);
+                Intent intent= new Intent(MainActivity.this,page1.class);
                 startActivity(intent);
             }
         });
@@ -79,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void Homeactivity() {
         finish();
-        Intent intent=new Intent(getApplicationContext(),page2.class);
+        Intent intent=new Intent(getApplicationContext(),page1.class);
         startActivity(intent);
     }
 }
