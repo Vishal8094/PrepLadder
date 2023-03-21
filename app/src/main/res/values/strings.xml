@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PrepLadder</string>
+    <string name="user_id">User ID</string>
+    <string name="firstyear">FY</string>
+</resources>
