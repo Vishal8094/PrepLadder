@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ThirdYear">
 
-    <TextView
-        android:id="@+id/textView6"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ThirdYear"
-        android:textSize="90dp"
+        android:src="@drawable/pngtree_coming_soon_stay_tuned_with_megaphone_png_image_3995880"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="170dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="31dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

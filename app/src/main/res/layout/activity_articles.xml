@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Articles">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngtree_coming_soon_stay_tuned_with_megaphone_png_image_3995880"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

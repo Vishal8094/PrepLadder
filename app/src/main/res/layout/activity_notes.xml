@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Notes">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Notes"
-        android:textSize="100dp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="240dp"
-        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imagebrowse"
+        android:layout_width="154dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971"
+        app:srcCompat="@drawable/images__1_" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".pyq">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Pyq"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="225dp"
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pngtree_coming_soon_stay_tuned_with_megaphone_png_image_3995880"
         tools:ignore="MissingConstraints"
-        android:textSize="100dp"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

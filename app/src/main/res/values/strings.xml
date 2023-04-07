@@ -2,4 +2,16 @@
     <string name="app_name">PrepLadder</string>
     <string name="user_id">User ID</string>
     <string name="firstyear">FY</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="hi">Hi!</string>
+    <string name="keep_exploring">Keep exploring</string>
+    <string name="search_your_book">Search your book</string>
+    <string name="books">Books</string>
+    <string name="comming_soon">comming soon</string>
+    <string name="articles">Articles</string>
+    <string name="notes">Notes</string>
+    <string name="p_y_q">P.Y.Q</string>
+    <string name="sy">SY</string>
+    <string name="ty">TY</string>
 </resources>

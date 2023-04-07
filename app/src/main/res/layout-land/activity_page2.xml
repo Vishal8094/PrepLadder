@@ -9,7 +9,7 @@
 
 
         <ScrollView
-            android:layout_width="409dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp"
@@ -30,8 +30,6 @@
                         android:id="@+id/textView11"
                         android:layout_width="93dp"
                         android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="300dp"
                         android:text="@string/hi"
                         android:textColor="#5b5b5b"
                         android:textSize="25sp"
@@ -54,8 +52,6 @@
                         android:id="@+id/textView12"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="191dp"
                         android:includeFontPadding="true"
                         android:text="@string/keep_exploring"
                         android:textColor="#0c343d"
@@ -79,12 +75,11 @@
                         android:id="@+id/editTextTextPersonName6"
                         android:layout_width="350dp"
                         android:layout_height="48dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="40dp"
                         android:backgroundTint="@color/black"
                         android:bottomLeftRadius="15dp"
                         android:bottomRightRadius="15dp"
                         android:ems="10"
+                        android:gravity="center_horizontal"
                         android:hint="@string/search_your_book"
                         android:inputType="textPersonName"
                         android:textColorHint="@color/black"
@@ -107,10 +102,12 @@
                     android:layout_height="match_parent">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="441dp"
+                        android:layout_width="match_parent"
                         android:layout_height="598dp"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
                         app:cardUseCompatPadding="true"
                         tools:layout_editor_absoluteX="1dp"
                         tools:layout_editor_absoluteY="321dp">
@@ -124,10 +121,8 @@
                                 android:id="@+id/notes"
                                 android:layout_width="148dp"
                                 android:layout_height="176dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="31dp"
-                                android:layout_marginBottom="367dp"
+                                android:layout_marginStart="29dp"
+                                android:layout_toEndOf="@+id/books"
                                 android:scaleType="centerCrop"
                                 app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_57" />
 
@@ -135,10 +130,8 @@
                                 android:id="@+id/articles"
                                 android:layout_width="156dp"
                                 android:layout_height="184dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="23dp"
-                                android:layout_marginBottom="167dp"
+                                android:layout_marginStart="33dp"
+                                android:layout_toEndOf="@+id/notes"
                                 android:scaleType="centerCrop"
                                 app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_59" />
 
@@ -146,10 +139,8 @@
                                 android:id="@+id/books"
                                 android:layout_width="168dp"
                                 android:layout_height="226dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="194dp"
-                                android:layout_marginBottom="320dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"
                                 android:scaleType="centerCrop"
                                 app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_33_00" />
 
@@ -157,10 +148,10 @@
                                 android:id="@+id/pyq"
                                 android:layout_width="167dp"
                                 android:layout_height="229dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="192dp"
-                                android:layout_marginBottom="79dp"
+                                android:layout_below="@+id/books"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="27dp"
+                                android:layout_marginTop="45dp"
                                 android:scaleType="centerCrop"
                                 app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_58" />
 

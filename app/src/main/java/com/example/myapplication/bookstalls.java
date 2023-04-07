@@ -1,10 +1,14 @@
 package com.example.myapplication;
 
-public class booksnames {
-    String name;
-    public String book()
+public class bookstalls {
+    String bookName;
+
+    public bookstalls(String bookName){
+        this.bookName = bookName;
+    }
+    public String getBookName()
     {
-        return name;
+        return bookName;
     }
 
 }
