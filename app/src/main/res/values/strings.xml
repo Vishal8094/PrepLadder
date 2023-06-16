@@ -14,4 +14,20 @@
     <string name="p_y_q">P.Y.Q</string>
     <string name="sy">SY</string>
     <string name="ty">TY</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="email">Email</string>
+    <string name="todo">TODO</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="keep_reading">Keep Reading,</string>
+    <string name="you_ll_fall_in_love">You\'ll fall in love</string>
+    <string name="the_only_place_where_success_comes_before_work_is_in_the_dictionary">The only place where success comes before work is in the dictionary.</string>
+    <string name="welcome">Welcome</string>
+    <string name="next_page">next page</string>
+    <string name="book_holding_girl_picture">book holding girl picture</string>
+    <string name="coming_soon_image">Coming soon image</string>
+    <string name="next">next</string>
 </resources>

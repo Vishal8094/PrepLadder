@@ -12,13 +12,14 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         tools:ignore="MissingConstraints"
-        app:srcCompat="@drawable/hnci2nqjgj151" />
+        app:srcCompat="@drawable/hnci2nqjgj151"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="162dp"
         android:layout_height="112dp"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -33,23 +34,28 @@
         android:id="@+id/email"
         android:layout_width="352dp"
         android:layout_height="67dp"
+        android:autofillHints="Email"
         android:ems="10"
-        android:hint="Email"
-        android:textColor="@color/white"
+        android:hint="@string/email"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintVertical_bias="0.605"
+        tools:ignore="TextFields,TextContrastCheck" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="351dp"
         android:layout_height="63dp"
         android:ems="10"
-        android:hint="Password"
+        android:textColor="@color/black"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,29 +63,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextFields"
+        android:autofillHints="Password" />
 
     <EditText
         android:id="@+id/confirm_password"
         android:layout_width="349dp"
         android:layout_height="62dp"
         android:ems="10"
-        android:hint="Confirm Password"
+        android:hint="@string/confirm_password"
+        android:textColorHint="@color/black"
         android:inputType="textPersonName"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.778"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextFields"
+        android:autofillHints="Comfirm Password" />
 
     <TextView
         android:id="@+id/logedin"
         android:layout_width="97dp"
         android:layout_height="47dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/black"
         android:textSize="38sp"
         android:textStyle="bold"
@@ -100,5 +109,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.958"
-        app:srcCompat="@drawable/_68px_font_awesome_5_solid_arrow_circle_right_svg" />
+        app:srcCompat="@drawable/_68px_font_awesome_5_solid_arrow_circle_right_svg"
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

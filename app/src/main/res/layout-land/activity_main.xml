@@ -15,13 +15,14 @@
         app:srcCompat="@drawable/_b2dd288788f3ac3ebc15ec0f072ff3b"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="3dp" />
+        tools:layout_editor_absoluteY="3dp"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="189dp"
         android:layout_height="101dp"
-        android:text="Welcome Back"
+        android:text="@string/welcome_back"
         android:textColor="@color/white"
         android:textSize="38sp"
         android:textStyle="bold"
@@ -37,35 +38,41 @@
         android:layout_width="441dp"
         android:layout_height="60dp"
         android:ems="10"
-        android:hint="Email"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:hint="@string/email"
+        android:textColorHint="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+        app:layout_constraintVertical_bias="0.472"
+        android:autofillHints="Email"
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="439dp"
         android:layout_height="58dp"
         android:ems="10"
-        android:hint="Password"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
+        app:layout_constraintVertical_bias="0.676"
+        android:autofillHints="Password"
+        tools:ignore="TextFields" />
 
     <TextView
         android:id="@+id/signin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:text="@string/sign_in"
         android:textColor="@color/white"
         android:textSize="38sp"
         android:textStyle="bold"
@@ -80,7 +87,7 @@
         android:id="@+id/newaccount"
         android:layout_width="148dp"
         android:layout_height="29dp"
-        android:text="Create New Account"
+        android:text="@string/create_new_account"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -103,7 +110,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.801"
         app:srcCompat="@drawable/_68px_font_awesome_5_solid_arrow_circle_right_svg"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
 
 
     <ImageView
@@ -117,7 +125,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.956"
         app:srcCompat="@drawable/sign_in_with_google_button6733"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

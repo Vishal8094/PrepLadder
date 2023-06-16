@@ -96,7 +96,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.157"
-                        tools:ignore="MissingConstraints" />
+                        tools:ignore="MissingConstraints"
+                        android:autofillHints="Search bar" />
 
 
                 </RelativeLayout>
@@ -129,7 +130,8 @@
                                 android:layout_marginEnd="31dp"
                                 android:layout_marginBottom="367dp"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_57" />
+                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_57"
+                                android:contentDescription="@string/notes" />
 
                             <ImageView
                                 android:id="@+id/articles"
@@ -140,7 +142,8 @@
                                 android:layout_marginEnd="23dp"
                                 android:layout_marginBottom="167dp"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_59" />
+                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_59"
+                                android:contentDescription="@string/articles" />
 
                             <ImageView
                                 android:id="@+id/books"
@@ -151,7 +154,8 @@
                                 android:layout_marginEnd="194dp"
                                 android:layout_marginBottom="320dp"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_33_00" />
+                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_33_00"
+                                android:contentDescription="@string/books" />
 
                             <ImageView
                                 android:id="@+id/pyq"
@@ -162,7 +166,8 @@
                                 android:layout_marginEnd="192dp"
                                 android:layout_marginBottom="79dp"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_58" />
+                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_58"
+                                android:contentDescription="@string/p_y_q" />
 
                             <TextView
                                 android:id="@+id/textView2"

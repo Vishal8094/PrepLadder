@@ -12,5 +12,6 @@
         android:src="@drawable/pngtree_coming_soon_stay_tuned_with_megaphone_png_image_3995880"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="31dp" />
+        tools:layout_editor_absoluteY="31dp"
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,15 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.111"
-        app:srcCompat="@drawable/_0_awesome_curated_newsletter_ideas_asset_elink_io__768x600" />
+        app:srcCompat="@drawable/_0_awesome_curated_newsletter_ideas_asset_elink_io__768x600"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Keep Reading,"
+        android:text="@string/keep_reading"
         android:textColor="#073763"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,9 +39,9 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You'll fall in love"
+        android:text="@string/you_ll_fall_in_love"
         android:textColor="#073763"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +54,7 @@
         android:id="@+id/textView8"
         android:layout_width="274dp"
         android:layout_height="60dp"
-        android:text="The only place where success comes before work is in the dictionary."
+        android:text="@string/the_only_place_where_success_comes_before_work_is_in_the_dictionary"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,15 +73,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"
-        app:srcCompat="@drawable/_19_5196821_blue_arrow_right_icon_hd_png_download" />
+        app:srcCompat="@drawable/_19_5196821_blue_arrow_right_icon_hd_png_download"
+        android:contentDescription="@string/next_page" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="188dp"
         android:layout_height="49dp"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textColor="#073763"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
