@@ -30,4 +30,8 @@
     <string name="book_holding_girl_picture">book holding girl picture</string>
     <string name="coming_soon_image">Coming soon image</string>
     <string name="next">next</string>
+    <string name="first_year">First Year</string>
+    <string name="second_year">Second Year</string>
+    <string name="third_year">Third Year</string>
+    <string name="p_y_ques">P.Y.Ques</string>
 </resources>

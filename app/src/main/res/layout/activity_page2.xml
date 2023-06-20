@@ -18,20 +18,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
+                android:orientation="vertical"
+                android:padding="4dp">
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="93dp"
                         android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="300dp"
+                        android:layout_marginTop="10dp"
                         android:text="@string/hi"
                         android:textColor="#5b5b5b"
                         android:textSize="25sp"
@@ -43,18 +37,13 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.022"
                         tools:ignore="MissingConstraints" />
-                </RelativeLayout>
 
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/textView12"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
                         android:layout_marginEnd="191dp"
                         android:includeFontPadding="true"
                         android:text="@string/keep_exploring"
@@ -68,175 +57,148 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.083" />
 
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <EditText
                         android:id="@+id/editTextTextPersonName6"
-                        android:layout_width="350dp"
+                        android:layout_width="380dp"
                         android:layout_height="48dp"
-                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
                         android:layout_marginEnd="40dp"
+                        android:layout_marginStart="12dp"
                         android:backgroundTint="@color/black"
                         android:bottomLeftRadius="15dp"
                         android:bottomRightRadius="15dp"
-                        android:ems="10"
+                        android:ems="20"
                         android:hint="@string/search_your_book"
                         android:inputType="textPersonName"
                         android:textColorHint="@color/black"
                         android:topLeftRadius="15dp"
                         android:topRightRadius="15dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.428"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.157"
                         tools:ignore="MissingConstraints"
                         android:autofillHints="Search bar" />
 
 
-                </RelativeLayout>
-
-
                 <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    >
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="441dp"
-                        android:layout_height="598dp"
-                        android:background="@color/white"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="10dp"
-                        app:cardUseCompatPadding="true"
-                        tools:layout_editor_absoluteX="1dp"
-                        tools:layout_editor_absoluteY="321dp">
+                        android:id="@+id/books"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="10dp">
 
-                        <RelativeLayout
+                        <FrameLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-
                             <ImageView
-                                android:id="@+id/notes"
-                                android:layout_width="148dp"
-                                android:layout_height="176dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="31dp"
-                                android:layout_marginBottom="367dp"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_57"
-                                android:contentDescription="@string/notes" />
-
-                            <ImageView
-                                android:id="@+id/articles"
-                                android:layout_width="156dp"
-                                android:layout_height="184dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="23dp"
-                                android:layout_marginBottom="167dp"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_59"
-                                android:contentDescription="@string/articles" />
-
-                            <ImageView
-                                android:id="@+id/books"
-                                android:layout_width="168dp"
-                                android:layout_height="226dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="194dp"
-                                android:layout_marginBottom="320dp"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_33_00"
-                                android:contentDescription="@string/books" />
-
-                            <ImageView
-                                android:id="@+id/pyq"
-                                android:layout_width="167dp"
-                                android:layout_height="229dp"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentBottom="true"
-                                android:layout_marginEnd="192dp"
-                                android:layout_marginBottom="79dp"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/whatsapp_image_2023_04_02_at_16_32_58"
-                                android:contentDescription="@string/p_y_q" />
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/whatsapp_image_2023_04_02_at_16_33_00"
+                                android:contentDescription="@string/todo" />
 
                             <TextView
-                                android:id="@+id/textView2"
-                                android:layout_width="69dp"
-                                android:layout_height="27dp"
-                                android:layout_alignStart="@+id/books"
-                                android:layout_alignTop="@+id/books"
-                                android:layout_alignEnd="@+id/books"
-                                android:layout_alignBottom="@+id/books"
-                                android:layout_marginStart="51dp"
-                                android:layout_marginTop="0dp"
-                                android:layout_marginEnd="48dp"
-                                android:layout_marginBottom="199dp"
                                 android:text="@string/books"
-                                android:textColor="@color/white"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/textView3"
-                                android:layout_width="65dp"
-                                android:layout_height="30dp"
-                                android:layout_alignStart="@+id/pyq"
-                                android:layout_alignTop="@+id/pyq"
-                                android:layout_alignEnd="@+id/pyq"
-                                android:layout_alignBottom="@+id/pyq"
-                                android:layout_marginStart="56dp"
-                                android:layout_marginTop="1dp"
-                                android:layout_marginEnd="46dp"
-                                android:layout_marginBottom="198dp"
-                                android:text="@string/p_y_q"
-                                android:textColor="@color/white"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:id="@+id/textView5"
-                                android:layout_width="57dp"
-                                android:layout_height="21dp"
-                                android:layout_alignStart="@+id/notes"
-                                android:layout_alignTop="@+id/notes"
-                                android:layout_alignEnd="@+id/notes"
-                                android:layout_alignBottom="@+id/notes"
-                                android:layout_marginStart="50dp"
-                                android:layout_marginTop="-2dp"
-                                android:layout_marginEnd="41dp"
-                                android:layout_marginBottom="157dp"
-                                android:text="@string/notes"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:id="@+id/textView6"
+                                android:layout_marginStart="57dp"
+                                android:layout_marginTop="5dp"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignStart="@+id/articles"
-                                android:layout_alignTop="@+id/articles"
-                                android:layout_alignEnd="@+id/articles"
-                                android:layout_alignBottom="@+id/articles"
-                                android:layout_marginStart="47dp"
-                                android:layout_marginTop="-3dp"
-                                android:layout_marginEnd="48dp"
-                                android:layout_marginBottom="163dp"
+                                android:layout_height="wrap_content"/>
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/notes"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_toEndOf="@+id/books"
+                        app:cardCornerRadius="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/whatsapp_image_2023_04_02_at_16_32_57"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:text="@string/notes"
+                                android:layout_marginStart="58dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pyq"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/books"
+                        app:cardCornerRadius="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/whatsapp_image_2023_04_02_at_16_32_58"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:text="@string/p_y_ques"
+                                android:layout_marginStart="55dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/articles"
+                        android:layout_width="160dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="23dp"
+                        android:layout_toEndOf="@+id/pyq"
+                        android:layout_below="@+id/books"
+                        app:cardCornerRadius="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/whatsapp_image_2023_04_02_at_16_32_583"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
                                 android:text="@string/articles"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
+                                android:layout_marginStart="55dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
 
-
-                        </RelativeLayout>
-
+                        </FrameLayout>
 
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
