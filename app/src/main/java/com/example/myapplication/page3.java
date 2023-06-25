@@ -2,16 +2,13 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class page3 extends AppCompatActivity {
 
-    Button firstYear,secondYear,thirdYear;
+    CardView firstYear,secondYear,thirdYear;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,12 +27,9 @@ public class page3 extends AppCompatActivity {
         });
 
         thirdYear = findViewById(R.id.thirdYear);
-        thirdYear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(page3.this,ThirdYear.class);
-                startActivity(intent);
-            }
+        thirdYear.setOnClickListener(v -> {
+            Intent intent = new Intent(page3.this, ThirdYear.class);
+            page3.this.startActivity(intent);
         });
     }
 

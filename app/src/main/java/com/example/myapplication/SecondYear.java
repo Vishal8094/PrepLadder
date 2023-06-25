@@ -17,7 +17,6 @@ public class SecondYear extends AppCompatActivity {
     int position = 0;
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_year);

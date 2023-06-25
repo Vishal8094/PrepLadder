@@ -13,5 +13,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pngtree_coming_soon_stay_tuned_with_megaphone_png_image_3995880"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

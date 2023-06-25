@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ThirdYear">
@@ -12,7 +13,8 @@
         android:src="@drawable/pngtree_coming_soon_stay_tuned_with_megaphone_png_image_3995880"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="31dp" />
+        tools:layout_editor_absoluteY="31dp"
+        android:contentDescription="@string/coming_soon_image" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
